@@ -7,5 +7,11 @@
 
   <body>
     <h1>Trypo</h1>
+    <% @fonts.each do |font| %>
+      <p><%= font.naming.name %></p> 
+    <% end %>
+
+    <script src="angular.min.js"></script>
+    <script src="application.js"></script>
   </body>
 </html>
