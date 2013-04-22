@@ -1,0 +1,18 @@
+<div ng-controller="TrypoController">
+
+  Text: <input ng-model="params.text" type="text">
+  Size: <input ng-model="params.size" type="text">
+  Color: <input ng-model="params.color" type="text">
+
+  <ul class="features">
+    <li ng-repeat="feature in params.features">
+      <label>
+        <input ng-change="changed()" 
+        ng-model="feature.checked" ng-checked="feature.checked" 
+        type="checkbox">
+        {{feature.tag}}
+      </label>
+    </li>
+  </ul>
+</div>
+
