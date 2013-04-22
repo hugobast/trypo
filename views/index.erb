@@ -6,12 +6,14 @@
   </head>
 
   <body>
-    <h1>Trypo</h1>
-    <% @fonts.each do |font| %>
-      <p><%= font.naming.name %></p> 
-    <% end %>
+    <div ng-app="app">
+      <h1>Trypo</h1>
+      <trypo></trypo>
+    </div>
 
     <script src="angular.min.js"></script>
+    <script src="angular-resource.min.js"></script>
+    <script src="services.js"></script>
     <script src="application.js"></script>
   </body>
 </html>

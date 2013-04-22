@@ -2,4 +2,11 @@ body, html {
   font-family: monospace;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
 
+ul.features li {
+  display: inline;
+}
